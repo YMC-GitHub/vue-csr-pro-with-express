@@ -8,17 +8,34 @@ vue app production with  express (csr mode)
 
 get detail [here](./note/dir-construtor.md)
 
-## some important deps for csr develop
+## some important deps for csr production
 
-- eslint (lint .js .vue file)
-- babel (handle es6+)
-- webpack (pack lib)
-- postcss (handle css style with future feat)
-- node-sass (handle sass/scss style (optional))
-- less (handle less style (optional))
+- express (use express framework)
+- express.router (use route help you?)
+- serve-static (use static file serve)
+- serve-favicon (to quickly use favicon)
+- morgan (use log for serve?)
+- compression (use zlip to compress)
+- lru-cache (mirco cache sth.)
+- connect-multiparty (support multi middleware?)
+- cookie-parser (parse cookie header and bind to req.cookies ?)
+- body-parser (parse req body for json , urlencoded ?)
+- moment (date library for parsing, validating, manipulating, and formatting dates?)
 
-note: remember to take care of their version with each other.
 
+## some config
+
+`config/server.config.js`
+
+01.where the host is? [config](./config/server.config.js#L8)
+
+02.which port will use?  [config](./config/server.config.js#L10)
+
+03.where the html file to serve?  [config](./config/server.config.js#L12)
+
+04.what is the name of html files?   [config](./config/server.config.js#L14)
+
+05.where the static file to serve?   [config](./config/server.config.js#L16)
 
 ## some command
 
